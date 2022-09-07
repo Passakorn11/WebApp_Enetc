@@ -20,20 +20,13 @@
     </form><br>
     <ul>
      <?php   
-    /*for($i=1;$i<11;$i++){
-        echo " <li><a href=post.php?id=$i>กระทู้ที่$i</a></li>";
-    }*/
-    $i=1;
-    /*while($i<=10){
-        echo " <li><a href=post.php?id=$i>กระทู้ที่$i</a></li>";
-        $i++;
-    }*/
-    do{
-        echo " <li><a href=post.php?id=$i>กระทู้ที่$i</a></li>";
-        $i++;
-    }while($i<=10);
+    for($i=1;$i<11;$i++){
+        echo "<li><a href=post.php?id="."$i".">กระทู้ที่".$i."</a></li>";
+    }
+    
 
     ?>
+    
     </ul>
     
 </form>

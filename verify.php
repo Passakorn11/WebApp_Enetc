@@ -10,15 +10,15 @@
     <h1 style="text-align:center ;">Webboard KakKak</h1><hr> 
     <div align="center">
         <?php
-        $a = $_POST["Login"];
-        $b = $_POST["pass"];
-        if($a=="admin"&&$b=="ad1234")echo "ยินดีต้อนรับคุณADMIN";
-        elseif($a=="member"&&$b=="mem1234")echo "ยินดีต้อนรับคุณMEMBER";
+        $login = $_POST["Login"];
+        $pwd = $_POST["pass"];
+        if($login=="admin"&&$pwd=="ad1234")echo "ยินดีต้อนรับคุณ ADMIN";
+        elseif($login=="member"&&$pwd=="mem1234")echo "ยินดีต้อนรับคุณ MEMBER";
         else echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง";
 
 
 ?>
-       <br> <a href="index2.php">กลับไปยังหน้าหลัก</a>
+       <br> <a href="index.php">กลับไปยังหน้าหลัก</a>
 
     </div>
     

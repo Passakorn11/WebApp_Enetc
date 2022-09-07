@@ -25,7 +25,7 @@
 
 
 
-        <a href="index2.php">กลับสู่หน้าหลัก</a>
+        <a href="index.php">กลับไปหน้าหลัก</a>
 
      </div> 
 </body>
