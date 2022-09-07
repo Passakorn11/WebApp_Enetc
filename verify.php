@@ -9,10 +9,16 @@
 <body>
     <h1 style="text-align:center ;">Webboard KakKak</h1><hr> 
     <div align="center">
-        เข้าสู่ระบบด้วย <br>
-        Login = <?php echo $_POST["Login"]; ?><br>
-        Password = <?php echo $_POST["pass"]; ?><br>
+        <?php
+        $a = $_POST["Login"];
+        $b = $_POST["pass"];
+        if($a=="admin"&&$b=="ad1234")echo "ยินดีต้อนรับคุณADMIN";
+        elseif($a=="member"&&$b=="mem1234")echo "ยินดีต้อนรับคุณMEMBER";
+        else echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง";
 
+
+?>
+       <br> <a href="index2.php">กลับไปยังหน้าหลัก</a>
 
     </div>
     

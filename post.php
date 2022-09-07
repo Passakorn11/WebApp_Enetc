@@ -10,6 +10,11 @@
      <h1 style="text-align:center ;">Webboard KakKak</h1><hr>
      <div align="center">
         ต้องการดูกระทู้หมายเลข<?php echo $_GET["id"]; ?> <br>
+        <?php
+        $n = $_GET["id"];
+        if(($n%2)==0) echo "เป็นกระทู้หมายเลขคู่";
+        else echo "เป็นกระทู้หมายเลขคี่";
+        ?>
         <table style="border:2px solid black ;width:40%" align="center">
         <tr><td style="background-color:#6CD2FE ;" colspan="2" >แสดงความคิดเห็น</td></tr>
         <tr><td colspan="2" align="center"><textarea name="message"row="10"col="30"></textarea></td></tr>
@@ -20,7 +25,7 @@
 
 
 
-        <a href="index2.html">กลับสู่หน้าหลัก</a>
+        <a href="index2.php">กลับสู่หน้าหลัก</a>
 
      </div> 
 </body>
